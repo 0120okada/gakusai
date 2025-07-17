@@ -106,3 +106,10 @@ window.addEventListener("load", () => {
   const history = loadHistory();
   updateHistoryDisplay(history);
 });
+document.addEventListener("keydown", function(event) {
+    if (event.shiftKey && event.key === "r") {
+        localStorage.removeItem("omikujiHistory");
+        updateHistoryDisplay();
+        alert("履歴をリセットしました（Shift + R）");
+    }
+});
