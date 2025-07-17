@@ -108,13 +108,6 @@ window.addEventListener("load", () => {
 });
 document.addEventListener("keydown", function(event) {
   if (event.key === "R" && event.shiftKey) {
-    localStorage.clear();
-    alert("おみくじの履歴をリセットしました！");
-    location.reload(); // ページをリロードして初期化
-  }
-});
-document.addEventListener("keydown", function(event) {
-  if (event.key === "R" && event.shiftKey) {
     const historyElement = document.getElementById("resultHistory"); // ←実際のIDに合わせて変更
     if (historyElement) {
       historyElement.innerHTML = ""; // 中身を空にする
