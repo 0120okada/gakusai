@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>学祭おみくじ</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+    }
+    #result {
+      margin: 20px 0;
+      font-size: 1.2em;
+      min-height: 50px;
+    }
+    #history {
+      text-align: left;
+      margin-top: 30px;
+    }
+    button {
+      font-size: 1.2em;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>学祭おみくじ</h1>
+  <button id="drawBtn">おみくじを引く</button>
+  <div id="result"></div>
+  <div id="history">
+    <h2>結果の履歴</h2>
+    <ul id="historyList"></ul>
+  </div>
+  <script src="omikuji.js"></script>
+</body>
+</html>
