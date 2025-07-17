@@ -107,9 +107,9 @@ window.addEventListener("load", () => {
   updateHistoryDisplay(history);
 });
 document.addEventListener("keydown", function(event) {
-    if (event.shiftKey && event.key === "r") {
-        localStorage.removeItem("omikujiHistory");
-        updateHistoryDisplay();
-        alert("履歴をリセットしました（Shift + R）");
-    }
+  if (event.key === "R" && event.shiftKey) {
+    localStorage.clear();
+    alert("おみくじの履歴をリセットしました！");
+    location.reload(); // ページをリロードして初期化
+  }
 });
